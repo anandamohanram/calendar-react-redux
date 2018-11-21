@@ -1,6 +1,8 @@
 import React from 'react'
 import moment from 'moment'
 import classes from './Month.module.scss'
+import Day from '../Day/Day'
+
 
 const Month = (props) => {
     //active month and year
@@ -24,7 +26,7 @@ const Month = (props) => {
     //fill date slots
     let dateSlots = [];
     for(let i = 1; i<=dayInMonths; i++){
-        dateSlots.push(<td key={i}> {i} </td>);
+        dateSlots.push(<td key={i}><Day day={i} month={props.month} year={props.year}/></td>);
     }
 
     //all slots

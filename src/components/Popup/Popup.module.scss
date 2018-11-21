@@ -1,0 +1,23 @@
+.popup{
+    border-radius: 4px;
+    background: #ffffff;
+    position: absolute;
+    left:25%;
+    top:50%;
+    width: 180px; 
+    height: 220px;
+    box-shadow: 1px 1px 2px 2px #9b9b9b; 
+    z-index: 10; 
+    display: flex;
+    flex-wrap: wrap;
+    button{
+        padding: 5px;
+        margin: 3px;
+        border:none;
+        font-size: 0.75rem;
+        font-weight: 500;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    
+}

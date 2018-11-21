@@ -1,0 +1,33 @@
+$holiday: #d3e0f0;           
+$busy: #fa9ea9;
+$anniversary: #9efab3;
+$birthday: #fad59e;
+
+.dayBoxes{
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin: -1px;
+    
+}
+
+.today{
+    border: 2px solid red;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.Holiday{
+background-color: $holiday;
+}
+
+.Birthday{
+    background-color: $birthday;
+}
+
+.Anniversary{
+    background-color: $anniversary;
+}
+
+.Busy{
+    background-color: $busy
+}

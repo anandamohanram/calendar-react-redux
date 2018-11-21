@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Year from './Year/Year';
+import Year from './components/Year/Year';
 
 class App extends Component {
   render() {
