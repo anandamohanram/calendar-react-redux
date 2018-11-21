@@ -1,0 +1,42 @@
+$holiday: #d3e0f0;           
+$busy: #fa9ea9;
+$anniversary: #9efab3;
+$birthday: #fad59e;
+
+.header{
+    width:100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: space-evenly;
+    padding: 10px;
+    button{
+        border:1px solid #ccc;
+        margin: 3px;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 1.1rem;
+    }
+    .left{
+        float: left;
+        width: 350px;        
+        text-align: left;
+    }
+    .right{
+        float:right;
+        width: 350px;
+        text-align: right;
+    }
+    .title{
+        margin: auto;
+        width: 350px;
+        font-size:1.2rem;
+        font-weight: 600;
+    }
+    .holiday    {width:10px; height:10px; background-color: $holiday}
+    .busy       {width:10px; height:10px; background-color: $busy}
+    .birthday   {width:10px; height:10px; background-color: $birthday}
+    .anniversary{width:10px; height:10px; background-color: $anniversary}
+}

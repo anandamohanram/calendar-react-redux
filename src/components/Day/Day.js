@@ -3,6 +3,7 @@ import moment from 'moment'
 import './Day.scss'
 import {connect} from 'react-redux'
 import Backdrop from '../Backdrop/Backdrop';
+import {updateTag} from '../../actions/actions'
 
 export class Day extends Component {   
 
@@ -13,6 +14,7 @@ export class Day extends Component {
     }
 
     clickHandler = e => {
+        //keep menu within display area
         let setY = e.clientY;  
         let setX = e.clientX;     
         if(e.clientY+220 >= window.innerHeight)
@@ -37,7 +39,7 @@ export class Day extends Component {
     }
 
     tagClicked = e => {
-        alert("clicked" + e.target.name)
+        this.props.onUpdateTag(this.props.day, this.props.month, this.props.year, e.target.name);
     }
 
   render() {
@@ -68,7 +70,7 @@ export class Day extends Component {
         }
         else{
             display = <div onClick={this.clickHandler} className = {dayTag}>
-                        {this.props.day}            
+                        {this.props.day}
                       </div>
         }
     return display;
@@ -79,4 +81,8 @@ const mapStateToProps = state => {
     return state;
 }
 
-export default connect(mapStateToProps)(Day);
+const mapActionsToProps = {
+    onUpdateTag : updateTag
+}
+
+export default connect(mapStateToProps, mapActionsToProps)(Day);
