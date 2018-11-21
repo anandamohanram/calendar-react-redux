@@ -20,6 +20,9 @@ const Header = (props) => {
                         <td className={classes.anniversary}>
                         </td>
                         <td>Anniversary</td>
+                        <td className={classes.today}>
+                        &nbsp;&nbsp;</td>
+                        <td>Today</td>
                     </tr>
                 </tbody>
             </table>

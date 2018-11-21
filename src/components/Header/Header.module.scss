@@ -41,4 +41,9 @@ $birthday: #fad59e;
     .busy       {width:10px; height:10px; background-color: $busy}
     .birthday   {width:10px; height:10px; background-color: $birthday}
     .anniversary{width:10px; height:10px; background-color: $anniversary}
+    .today{
+        border: 2px solid red;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+    }
 }
