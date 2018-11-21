@@ -1,0 +1,24 @@
+.monthTable{
+    border: 0;
+    border-spacing: 0;
+    border-collapse: collapse;
+    .monthName{
+        color: #3d5b88;
+    }
+
+    .dayNames{
+        background-color: #d9d9d9;
+        color: #989296;
+        td{
+            padding: 2px 10px;
+        }
+    }
+
+    .slots{
+        td:nth-child(7),
+        td:nth-child(1){
+            font-weight: 700;
+            color:#4977b4;
+        }
+    }
+}
