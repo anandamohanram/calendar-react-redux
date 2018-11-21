@@ -24,13 +24,15 @@ const Header = (props) => {
                 </tbody>
             </table>
             </div>
+            
             <div className={classes.title}>
-            {props.year}
-            </div>
-            <div className={classes.right}>
             <button onClick={props.prev}> &lt; </button>
-            <button onClick={props.today}>{props.yearNow}</button>
+            {props.year}
             <button onClick={props.next}> &gt; </button>
+            </div>
+            
+            <div className={classes.right}>
+            <button onClick={props.today}> Current year</button>
             </div>
         </div>
     );
