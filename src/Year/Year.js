@@ -1,5 +1,6 @@
 import React from 'react'
 import Month from '../Month/Month'
+import classes from './Year.module.scss'
 
 const Year = (props) => {
     let months = [];
@@ -9,7 +10,7 @@ const Year = (props) => {
         )
     }
     return(
-        <div>
+        <div className={classes.yearContainer}>
             {months}
         </div>
     )

@@ -1,0 +1,11 @@
+.yearContainer{
+    margin: auto;
+    max-width:1200px;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+    *{
+        flex: 1 1 360px;
+        margin: 5px auto
+    }
+}
