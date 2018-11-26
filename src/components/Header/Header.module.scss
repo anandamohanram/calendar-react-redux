@@ -3,7 +3,8 @@ $busy: #fa9ea9;
 $anniversary: #9efab3;
 $birthday: #fad59e;
 
-.header{
+
+@mixin header-style(){
     width:100%;
     max-width: 1200px;
     margin: 20px auto;
@@ -22,12 +23,12 @@ $birthday: #fad59e;
         box-shadow: 1px 1px 1px 1px #ccc;
     }
     .left{
-        float: left;
+        
         width: 350px;        
         text-align: left;
     }
     .right{
-        float:right;
+        
         width: 350px;
         text-align: right;
     }
@@ -45,5 +46,41 @@ $birthday: #fad59e;
         border: 2px solid red;
         border-top-right-radius: 12px;
         border-bottom-left-radius: 12px;
+    }
+}
+
+.header{
+    @include header-style();
+}
+
+@media only screen and (max-width: 600px) {
+    @include header-style();
+    .header{
+        flex-wrap: wrap-reverse;
+        .left{
+            width:80%;
+            text-align:center;
+            margin: auto;
+        }
+        .right{
+            text-align: center;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+    @include header-style();
+    .header{
+        flex-wrap: wrap-reverse;
+        .left{
+            width:80%;
+            text-align:center;
+            margin: auto;
+            font-size: 0.8rem;
+        }
+        .right{
+            text-align: center;
+        }
     }
 }
